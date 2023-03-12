@@ -181,3 +181,41 @@ body{
     color:#718096;
     font-size: 1.5rem;
 }
+.sect{
+    padding-bottom: 2rem;
+}
+.timeline{
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+}
+.tl-title{
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    color: #002333;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.tl-title-2{
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    color: #2d9cdb;
+    text-transform: uppercase;
+    font-weight: bold;
+   
+}
+.tl-content{
+    border-left: 2px solid #ccc;
+    padding-left: 2rem;
+    position: relative;
+    padding-bottom: 2rem;
+}
+.tl-title-2::before{
+    content: "";
+    position: absolute;
+    width: .9rem;
+    height: .9rem;
+    background-color: #2d9cdb;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    left:0;
+}
